@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 .container{
     display: flex;    
     justify-content: center;    
@@ -71,7 +73,7 @@
     background-color: transparent;
     border: 1px solid #52ffa8;
     transition: 0.2s;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .btn-primary:hover{
@@ -86,7 +88,7 @@
     background-color: transparent;
     border: 1px solid #52ffa8;
     transition: 0.2s;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .btn-second:hover{
@@ -159,7 +161,7 @@
 }
 
 .form input{
-    height: 45px;
+    height: 35px;
     width: 100%;
     border: none;
     background-color: #ecf0f1;
@@ -171,6 +173,7 @@
     display: flex;
     align-items: center;
     margin: 8px;
+    
 }
 
 .icon-modify{
