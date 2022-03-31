@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     display: flex;    
     justify-content: center;    
@@ -10,8 +15,8 @@
 .content{
     background-color: #687180;
     border-radius: 15px;
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: 60%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -21,12 +26,11 @@
     content: "";
     position: absolute;
     background-color: #313a49;
-    width: 40%;
+    width: 42%;
     height: 100%;
 }
 
-.title{
-    
+.title{    
     color: #52ffa8;
     font-size: 28px;
     font-weight: bold;
@@ -46,13 +50,15 @@
 
 .btn{
     border-radius: 15px;
-    text-transform: uppercase;
     color: #52ffa8;
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
-    
+    width: 150px;
+    align-self: center;
+    border: none;
+    font-size: 12px;
 }
 
 .btn-primary{
@@ -69,6 +75,22 @@
     cursor: pointer;
     box-shadow: 0px 0px 25px 2px #52ffa8;
 }
+
+.btn-second{
+    background-color: transparent;
+    border: 1px solid #52ffa8;
+    transition: 0.2s;
+    margin-top: 10px
+}
+
+.btn-second:hover{
+    background-color: #52ffa8;
+    color: #687180;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 2px #52ffa8;
+}
+
 .first-content{
     display: flex;
 }
@@ -86,6 +108,11 @@
     align-items: center;
 }
 
+.social-media{
+    margin: 1rem 0;
+}
+
+
 .list-social-media{
     display: flex;
     list-style-type: none;
@@ -98,10 +125,21 @@
     height: 35px;
     line-height: 35px;
     text-align: center;
+    color:#52ffa8;
+    transition: 0.2s;
 }
 
-.item-social-media a{
-    color:#52ffa8;
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
+.item-social-media:hover{
+    background-color: #52ffa8;
+    border-radius: 50%;
+    color: #687180;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 2px #52ffa8;
 }
 
 .form{
@@ -112,11 +150,23 @@
 
 .form input{
     height: 45px;
+    width: 100%;
     border: none;
     background-color: #ecf0f1;
+
+}
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
     margin: 8px;
 }
 
+.icon-modify{
+    color: #7f8c8d;
+    padding: 0 5px;
+}
 .second-content{
     position: absolute;
     display: none;
