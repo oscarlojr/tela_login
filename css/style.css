@@ -15,7 +15,7 @@
 .content{
     background-color: #687180;
     border-radius: 15px;
-    width: 90%;
+    width: 960px;
     height: 70%;
     justify-content: space-between;
     align-items: center;
@@ -26,8 +26,13 @@
     content: "";
     position: absolute;
     background-color: #313a49;
-    width: 42%;
+    width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 60%;
 }
 
 .title{    
@@ -46,6 +51,7 @@
     font-weight: 300;
     color: #ccdee8;
     line-height: 30px;
+    text-align: center;
 }
 
 .btn{
@@ -93,16 +99,17 @@
 
 .first-content{
     display: flex;
+    display: none;
 }
 
 .first-column{
     text-align: center;
-   flex: 1 0 auto;
+    width: 40%;
     z-index: 10;
 }
 
 .second-column{
-    flex: 2 0 auto;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +174,17 @@
     color: #7f8c8d;
     padding: 0 5px;
 }
+
+/*second-content*/
 .second-content{
     position: absolute;
-    display: none;
+    display: flex;
+}
+
+.second-content .first-column{
+    order: 2;
+}
+
+.second-content .second-column{
+    order: 1;
 }
