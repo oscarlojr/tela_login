@@ -32,7 +32,7 @@
     border-bottom-left-radius: 15px;
 
 
-    left: 60%;
+    left: 0;
 }
 
 .title{    
@@ -99,7 +99,10 @@
 
 .first-content{
     display: flex;
-    display: none;
+}
+
+.first-content .second-column{
+    z-index: 12;
 }
 
 .first-column{
@@ -183,8 +186,10 @@
 
 .second-content .first-column{
     order: 2;
+    z-index: -1;
 }
 
 .second-content .second-column{
     order: 1;
+    z-index: -1;
 }
