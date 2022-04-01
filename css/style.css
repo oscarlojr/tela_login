@@ -165,6 +165,7 @@
     width: 100%;
     border: none;
     background-color: #ecf0f1;
+    border-radius: 15px;
 
 }
 
@@ -173,6 +174,7 @@
     display: flex;
     align-items: center;
     margin: 8px;
+    border-radius: 15px;
     
 }
 
